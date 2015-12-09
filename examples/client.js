@@ -1,6 +1,6 @@
-var _ = require('../index.js');
+var ovaldi = require('../index.js');
 
-var ctx = _.getContext('http://127.0.0.1:3001');
+var ctx = ovaldi.getContext('http://127.0.0.1:3001');
 
 ctx.on('ready', () => {
 	console.log('ctx ready');

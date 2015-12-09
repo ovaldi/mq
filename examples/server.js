@@ -1,6 +1,6 @@
-var _ = require('../index.js');
+var ovaldi = require('../index.js');
 
-var hub = _.getHub();
+var hub = ovaldi.getHub();
 
 hub
 	.createChannel('channel')
