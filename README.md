@@ -1,6 +1,6 @@
 ### Introduction
 
- This is a Message Pub/Sub system, enqueue from HTTP, dequeue from TCP Socket.
+ This is a Message Pub/Sub library, enqueue from HTTP, dequeue from TCP Socket.
  
 ### Runing tests
  	
