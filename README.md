@@ -1,6 +1,11 @@
 ### Introduction
 
  This is a Message Pub/Sub library, enqueue from HTTP, dequeue from TCP Socket.
+
+### Installation 
+
+```
+	npm install ovaldi
  
 ### Runing tests
  	
