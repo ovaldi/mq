@@ -18,7 +18,7 @@
  ```
 ### Example (Server-side)
 ```js
-    var _ = require('./index.js');
+    var _ = require('ovaldi');
 
 	var hub = _.getHub();
 
@@ -33,7 +33,7 @@
 ### Example (Client-side)
 
 ```js
-    var _ = require('./index.js');
+    var _ = require('ovaldi');
 
 	var ctx = _.getContext('http://127.0.0.1:3001');
 
