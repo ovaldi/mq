@@ -1,3 +1,7 @@
+### Introduction
+
+ This is a Message Pub/Sub system, enqueue from HTTP, dequeue from TCP Socket.
+ 
 ### Runing tests
  	
  Start server:
