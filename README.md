@@ -6,6 +6,7 @@
 
 ```
 	npm install ovaldi
+```
  
 ### Runing tests
  	
