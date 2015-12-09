@@ -24,9 +24,9 @@
  ```
 ### Example (Server-side)
 ```js
-    var _ = require('ovaldi');
+    var ovaldi = require('ovaldi');
 
-	var hub = _.getHub();
+	var hub = ovaldi.getHub();
 
 	hub
 		.createChannel('channel')
@@ -39,9 +39,9 @@
 ### Example (Client-side)
 
 ```js
-    var _ = require('ovaldi');
+    var ovaldi = require('ovaldi');
 
-	var ctx = _.getContext('http://127.0.0.1:3001');
+	var ctx = ovaldi.getContext('http://127.0.0.1:3001');
 
 	ctx.on('ready', () => {
 		console.log('ctx ready');
@@ -76,6 +76,9 @@
 		});
 
 		//destroy context
-		//ctx.destroy();
+		process.on('SIGINT', () => {
+			ctx.destroy();
+			process.exit(0);
+		});
 	});
 ```
