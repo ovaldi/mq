@@ -5,19 +5,19 @@
 ### Runing tests
  	
  Start server:
- 
+ ```
     $ node examples/server.js
-    
+ ```   
  Start client:
-    
+ ```    
     $ node examples/client.js
- 
+ ```
  Start publisher:
- 
+ ```
     $ node examples/publisher.js
-
+ ```
 ### Example (Server-side)
-
+```js
     var _ = require('./index.js');
 
 	var hub = _.getHub();
@@ -29,10 +29,10 @@
 		.then(()=>{
 			console.log('server: ready');	
 	 	});
-
+```
 ### Example (Client-side)
 
-
+```js
     var _ = require('./index.js');
 
 	var ctx = _.getContext('http://127.0.0.1:3001');
@@ -72,3 +72,4 @@
 		//destroy context
 		//ctx.destroy();
 	});
+```
